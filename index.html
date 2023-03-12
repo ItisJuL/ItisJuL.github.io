@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zulfa Prawiranegara</title>
+    <style>
+        .Home {
+          background-color: whitesmoke;
+        }
+        .Porto {
+          background-color: rgb(214, 214, 214);
+        }
+        .Bio {
+          background-color: whitesmoke;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:hover {
+            text-decoration: none;
+            border-bottom: 2px solid rgb(255, 255, 0);
+        }
+        .nav-link:hover::after{
+            opacity: 1;
+        }
+        .carousel-item {
+          height: 615px;
+          
+        }
+        .carousel-item img {
+          margin-top: -110px;
+          background-size: cover;
+        }
+
+      .carousel-control-prev, .carousel-control-next {
+        background-color: beige;
+        border-radius: 50%;
+        top: 50%;
+        
+      }
+
+    
+      .card-wrapper {
+        display: flex;
+        padding-left: 6cm;
+        padding-top: 2cm;
+      }
+      .card {
+        margin: 0 .5em;
+        width: calc(100%/3);
+        border: none;
+        border-radius: 0%;
+        box-shadow: 2px 6px 8px 0 rgb(206, 206, 206);
+      }
+      .img-wrap {
+        height: 22vw;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .img-wrap img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <header>
+        <div class="Navbar">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#Footer"><img src="jultaro.jpeg" width="30" height="30" class="d-inline-block align-text-top">Zulfa Prawiranegara</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto">
+                      <li>
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                      </li>
+                      <li>
+                        <a class="nav-link active" href="#Portofolio">Portofolio</a>
+                      </li>
+                      <li>
+                        <a class="nav-link active" href="#Biodata">Identitas diri</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <div class="Container">
+        <div class="Home" id="Home">
+            <br><br><br>
+            <p><h1 align="center">Zulfa Prawiranegara_Web Statis_TJKT</h1></p>
+            <div class="card-group">
+                <div class="card">
+                  <img src="rakitpc.jpg" class="card-img-top" alt="Praktek">
+                  <div class="card-body">
+                    <h5 class="card-title">Kegiatan Praktek</h5>
+                    <p class="card-text">Beberapa kegiatan Praktek yang pernah kami lakukan.</p>
+                    <a href="#Praktek" class="btn btn-lg btn-primary">Selengkapnya</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/gFaqBPWfEqU?rel=0" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen scrolling="no" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"></iframe></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Penerapan K3LH</h5>
+                    <p class="card-text">Video penerapan K3LH oleh Kelompok Kapitan Patimura.</p>
+                    <a href="https://youtu.be/gFaqBPWfEqU" class="btn btn-lg btn-danger">Tonton Video</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="belajar.jpg" class="card-img-top" alt="Pembelajaran">
+                  <div class="card-body">
+                    <h5 class="card-title">Pelajaran di TJKT</h5>
+                    <p class="card-text">Materi pembelajaran yang dipelajari dibidang TJKT.</p>
+                    <a href="#Baca" class="btn btn-lg btn-primary">Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+              <br><br>
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" align="center">
+                <br><br><br>
+                <p><h1 id="Praktek">Kegiatan Praktek X-TJKT</h1></p>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="rakitpc.jpg" class="d-block w-100" alt="mending rakit pc" style="  filter: brightness(50%);">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Rakit PC</h5>
+                        <p>Latihan merakit PC dan mengenali komponen-komponennya.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="krimping.jpg" class="d-block w-100" alt="Krimping" style="  filter: brightness(50%);">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Krimping Kabel</h5>
+                        <p>Krimping kabel UTP dan mengetesnya apakah berfungsi.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="coding.jpg" class="d-block w-100" alt="Membuat Web Statis" style="  filter: brightness(50%);">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Coding Web Statis</h5>
+                        <p>Mengcoding Web Statis menggunakan HTML dan CSS.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+        </div>
+
+        <div id="BelajarCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel" align="center">
+          <br><br><br>
+          <div id="BelajarCarouselCaptions" class="carousel slide" data-bs-ride="carousel">
+            <p><h1 id="Baca">Pelajaran di TJKT</h1></p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card-wrapper">
+                  <div class="card" style="width: 18rem;">
+                    <div class="img-wrap">
+                      <img src="Osi.jpg" alt="OSI Layer">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">OSI Layer</h5>
+                      <p class="card-text">Mempelajari 7 Layer OSI (Open System Interconnection) dan fungsi dari masing-masing layer.</p>
+                      <br>
+                    </div>
+                  </div>
+              <div class="card" style="width: 18rem;">
+                <div class="img-wrap">
+                  <img src="komponen.jpg" alt="Komponen Komputer">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Komponen Komputer</h5>
+                  <p class="card-text">Mengenali berbagai macam komponen-komponen perangkat sebuah Komputer.</p>
+                  <br>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="img-wrap">
+                  <img src="mendingrakitpc.jpg"alt="Merakit PC">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Merakit PC</h5>
+                  <p class="card-text">Latihan bagaimana cara merakit PC</p>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="carousel-item">
+                <div class="card-wrapper">
+                  <div class="card" style="width: 18rem;">
+                    <div class="img-wrap">
+                      <img src="perangkatjaringan.jpg" alt="perangkatjaringan">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Perangkat Jaringan</h5>
+                      <p class="card-text">Mengenali berbagai macam Perangkat Jaringan dan fungsinya.</p>
+                      <br>
+                    </div>
+                  </div>
+              <div class="card" style="width: 18rem;">
+                <div class="img-wrap">
+                  <img src="kabel.jpg"  alt="kabel">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Kabel Jaringan</h5>
+                  <p class="card-text">Mengenali jenis-jenis kabel jaringan dan fungsinya masing-masing.</p>
+                  <br>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="img-wrap">
+                  <img src="kerimpingkbl.jpg"  alt="kerimping">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Krimping Kabel</h5>
+                  <p class="card-text">Latihan bagaimana cara mengkrimping kabel jaringan.</p>
+                  <br>
+                </div>
+              </div>
+            </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-wrapper">
+                  <div class="card" style="width: 18rem;">
+                    <div class="img-wrap">
+                      <img src="k3lh.jpg"alt="k3lh">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">K3LH</h5>
+                      <p class="card-text">Mengenali K3LH (Kesehatan, Keselamatan Kerja dan Lingkungan Hidup).</p>
+                      <br>
+                    </div>
+                  </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <div class="img-wrap">
+                    <img src="ipaddress.jpg"  alt="ipaddress">
+                  </div>
+                  <h5 class="card-title">IP Address</h5>
+                  <p class="card-text">Mengenali IP Address, jenis-jenis dan fugsi dari IP Address.</p>
+                  <br>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="img-wrap">
+                  <img src="webstatis.jpg"  alt="webstatis">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Website Statis</h5>
+                  <p class="card-text">Mengenali apa itu Website Statis, dan Mempelajari cara membuatnya menggunakan HTML dan CSS.</p>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#BelajarCarouselCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#BelajarCarouselCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <br><br>
+          </div>
+  </div>
+</div>
+</div>
+    
+    
+    <div class="Porto" id="Portofolio">
+    <br><br>
+    <p><h1 align="center">Portofolio</h1></p>
+    <br>
+    <p><h4>Tugas Produktif Pak Amin</h4></p>
+    <div style="left: 0; width: 100%; height: 400px; position: relative;"><iframe src="https://drive.google.com/embeddedfolderview?id=1-wxcny-jWSYTAmgwlIiB4sjHEoMp8Wku#list" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
+    <br>
+    <p><h4>Tugas Produktif Pak Jefri</h4></p>
+    <div style="left: 0; width: 100%; height: 400px; position: relative;"><iframe src="https://drive.google.com/embeddedfolderview?id=1Hd7Gof4Wyo5sVpZ9ZGK1TQ_2slaQmX2k#list" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
+    <p><h4>Tugas Normatif</h4></p>
+    <div style="left: 0; width: 100%; height: 400px; position: relative;"><iframe src="https://drive.google.com/embeddedfolderview?id=1QGZrQwQkyIvyDUvC_4_a5fE_0KEYVk9T#list" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
+  </div>
+    
+    <div class="Bio" id="Biodata">
+        <br><br><br>
+        <p><h1 align="center">Biodata</h1></p>
+        <br>
+        <div class="Identitas" align="center">
+          <img src="jul.jpg" alt="ZulfaPrawiranegara" width="25%" height="25%" style="border-radius: 10%;" class="foro">
+          <br><br>
+          <table>
+            <tr>
+              <td>Nama</td>
+              <td>: Zulfa Prawiranegara</td>
+          </tr>
+          <tr>
+              <td>Alamat</td>
+              <td>: Perumahan Bali Indah Blok: J No: 25</td>
+          </tr>
+          <tr>
+              <td>Tempat, Tanggal Lahir</td>
+              <td>: Jakarta, 18 Mei 2007</td>
+          </tr>
+          <tr>
+              <td>Jenis Kelamin</td>
+              <td>: Laki-laki</td>
+          </tr>
+          <tr>
+              <td>Sekolah Asal</td>
+              <td>: SMKN 4 Jakarta</td>
+          </tr>
+        </table>
+        </div>
+     <br>
+        <h1 align="center">Riwayat Pendidikan</h1>
+        <div class="pendidikan"  align="center">
+          <table cellpadding="5">
+            <tr>
+              <td>TK</td>
+              <td>: Paud Mawar</td>
+              <td><b>(2010-2013)</b></td>
+          </tr>
+              <tr>
+                  <td>SD</td>
+                  <td>: SDN Pantai Makmur 02</td>
+                  <td><b>(2013-2019)</b></td>
+              </tr>
+              <tr>
+                  <td>SMP</td>
+                  <td>: SMPN 244 Jakarta</td>
+                  <td><b>(2019-2022)</b></td>
+              </tr>
+              <tr>
+                  <td>SMK</td>
+                  <td>: SMKN 4 Jakarta</td>
+                  <td><b>(2022-Sekarang)</b></td>
+              </tr>
+          </table>
+        </div>
+            
+    <br><br><br><br>
+    </div>
+    </div>
+    </div>
+</div>
+   
+
+<footer style="background-color: black;">
+    <div class="Footer" id="Footer">
+        <br>
+        <div class="container text-center">
+            <div class="row justify-content-md-center" style="color: white;">
+                <div class="col-md-auto">
+                    <p><h3 align="center">Social Media</h3></p>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col-auto">
+                <a href="https://web.facebook.com/zulfa.prawiranegara.7"><img src="facebook.png" alt="Facebook"  width="45px" height="45px"></a>
+              </div>
+              <div class="col-md-auto">
+                <a href="https://www.youtube.com/@ZulfaPrawiranegara"><img src="youtube.png" alt="Youtube"  width="45px" height="45px"></a>
+              </div>
+              <div class="col-auto">
+                <a href="https://www.instagram.com/_jull18"><img src="instagram.png" alt="Instagram" width="45px" height="45px"></a>
+              </div>
+            </div>
+          </div>
+          <br><br>
+        <div class="credit" style="color: white; background-color: rgb(17, 17, 17);">
+            <br>
+            <p><h6>© Design by Zulfa Prawiranegara_2023</h6></p>
+            <br>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
